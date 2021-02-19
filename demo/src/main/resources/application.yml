@@ -1,0 +1,17 @@
+spring.application.name: demo
+
+---
+spring:
+  profiles:
+    active:
+      on-profile: test3
+  config:
+    import: optional:configserver:http://localhost:8888
+
+---
+spring:
+  profiles:
+    active:
+      on-profile: test10
+  config:
+    import: optional:configserver:http://localhost:8888

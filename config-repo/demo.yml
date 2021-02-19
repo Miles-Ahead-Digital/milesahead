@@ -1,0 +1,17 @@
+message: demo
+
+---
+spring:
+  profiles:
+    active:
+      on-profile: test1
+
+message: test1
+
+---
+spring:
+  profiles:
+    active:
+      on-profile: test2
+
+message: test2
