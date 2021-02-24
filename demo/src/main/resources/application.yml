@@ -1,17 +1,23 @@
 spring.application.name: demo
 
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888/
+
+message: default-local
+
 ---
 spring:
   profiles:
     active:
       on-profile: test3
-  config:
-    import: optional:configserver:http://localhost:8888
+
+message: test3-local
 
 ---
 spring:
   profiles:
     active:
       on-profile: test10
-  config:
-    import: optional:configserver:http://localhost:8888
+
+message: test10-local
