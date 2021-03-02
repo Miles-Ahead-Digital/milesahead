@@ -8,7 +8,7 @@ message: default-local
 
 ---
 spring:
-  profiles:
+  config:
     activate:
       on-profile: test3
 
@@ -16,7 +16,7 @@ message: test3-local
 
 ---
 spring:
-  profiles:
+  config:
     activate:
       on-profile: test10
 
