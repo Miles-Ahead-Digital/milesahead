@@ -2,16 +2,16 @@ message: demo
 
 ---
 spring:
-  profiles:
-    active:
+  config:
+    activate:
       on-profile: test1
 
 message: test1
 
 ---
 spring:
-  profiles:
-    active:
+  config:
+    activate:
       on-profile: test2
 
 message: test2

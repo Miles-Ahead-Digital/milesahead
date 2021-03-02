@@ -2,16 +2,16 @@ message: application
 
 ---
 spring:
-  profiles:
-    active:
+  config:
+    activate:
       on-profile: test3
 
 message: test3
 
 ---
 spring:
-  profiles:
-    active:
+  config:
+    activate:
       on-profile: test4
 
 message: test4
